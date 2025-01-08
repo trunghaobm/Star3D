@@ -1,0 +1,232 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul li a {
+  color: white;
+  font-size: 16px;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #f09a36;
+}
+
+header .right input,
+header .right select {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+/* Hero Section */
+.hero {
+  background: url('image/hero.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.hero .cta {
+  padding: 10px 20px;
+  background-color: #f09a36;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.hero .cta:hover {
+  background-color: #e07b1f;
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;;
+  padding: 50px 20px;
+}
+
+.card {
+  width: 30%;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.card a {
+  display: block;
+  padding: 10px;
+  background-color: #f09a36;
+  color: white;
+  font-size: 1rem;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.card a:hover {
+  background-color: #e07b1f;
+}
+
+/* Contact Form */
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form button {
+  background-color: #f09a36;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #e07b1f;
+}
+
+/* Header */
+header {
+  position: fixed;      
+  top: 0;               
+  left: 0;     
+  right: 10px;         
+  width: 100%; 
+  height: 60px;         
+  background-color: #333; 
+  z-index: 1000;        
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Body */
+body {
+  padding-top: 60px; 
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+}
+
+footer .terms a {
+  color: white;
+}
+
+footer .terms a:hover {
+  color: #f09a36;
+}
+
+/* Icon */
+.icon{
+  width: 50px;
+  height: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact {
+      width: 100%;
+  }
+
+
+  .card {
+      width: 80%;
+      margin: 10px 0;
+  }
+
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+}
